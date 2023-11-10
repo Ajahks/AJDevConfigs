@@ -12,7 +12,8 @@ require('mason-lspconfig').setup({
 	'kotlin_language_server',
 	'eslint',
 	'clangd',
-    'lua_ls'
+    'lua_ls',
+    'bashls'
   },
   handlers = {
     lsp_zero.default_setup,
