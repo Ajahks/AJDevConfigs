@@ -39,4 +39,9 @@ return require('packer').startup(function(use)
 			{'L3MON4D3/LuaSnip'},
 		}
 	}
+
+    -- discord presence
+    use 'andweeb/presence.nvim'
+
+    use 'tpope/vim-fugitive'
 end)
