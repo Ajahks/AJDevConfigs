@@ -50,7 +50,7 @@ mason.setup {
 local servers = {}
 ------------------------------------- ADD LINTERS AND FORMATTERS HERE ---------------------------------------
 local linters_and_formatters = {
---    'csharpier',
+    'csharpier',
     'jsonlint',
     'markdownlint',
     'eslint-lsp'
@@ -137,7 +137,7 @@ servers['yamlls'] = default_config
 servers['lemminx'] = default_config
 servers['tsserver'] = default_config
 servers['eslint'] = default_config
--- servers['gopls'] = default_config
+servers['gopls'] = default_config
 -------------------------------------------------------------------------------------------------------------
 -- Ensure installed servers
 local ensure_installed = {}
