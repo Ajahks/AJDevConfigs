@@ -166,4 +166,5 @@ for lsp, config in pairs(servers) do -- Setup LSP servers
 end
 ---------------------------------------------- KEYMAPS ------------------------------------------------------
 vim.keymap.set({ "n", "v" }, "<leader>rl", ":LspRestart<CR>", { silent = false })
+vim.keymap.set("n", "<A-CR>", vim.lsp.buf.code_action, {})
 -------------------------------------------------------------------------------------------------------------
