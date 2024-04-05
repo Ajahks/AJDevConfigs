@@ -23,22 +23,25 @@ return require('packer').startup(function(use)
 
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
-	use {
-		'VonHeikemen/lsp-zero.nvim',
-		branch = 'v3.x',
-		requires = {
-			--- LSP Server Management 
-			{'williamboman/mason.nvim'},
-			{'williamboman/mason-lspconfig.nvim'},
-
-			-- LSP Support
-			{'neovim/nvim-lspconfig'},
-			-- Autocompletion
-			{'hrsh7th/nvim-cmp'},
-			{'hrsh7th/cmp-nvim-lsp'},
-			{'L3MON4D3/LuaSnip'},
-		}
-	}
+    -- LSP
+    --use{
+    --    'neoclide/coc.nvim', branch ='release'
+    --}
+    use "neovim/nvim-lspconfig"
+    use "williamboman/mason.nvim"
+    use "williamboman/mason-lspconfig.nvim"
+    use "jose-elias-alvarez/null-ls.nvim"   -- for linting purposes
+    use "folke/trouble.nvim"                -- for LSP\Linter warnings\errors
+    use "hrsh7th/nvim-cmp"                    -- completion plugin
+    use "hrsh7th/cmp-buffer"                  -- buffer completions
+    use "hrsh7th/cmp-path"                    -- path completions
+    use "hrsh7th/cmp-cmdline"                 -- cmdline completions
+    use "saadparwaiz1/cmp_luasnip"            -- snippet completions
+    use "hrsh7th/cmp-nvim-lua"                -- lua vim completions
+    use "hrsh7th/cmp-nvim-lsp"                -- LSP completions
+    use "hrsh7th/cmp-nvim-lsp-signature-help" -- function parameters completions
+    use "L3MON4D3/LuaSnip"             -- snippet engine
+    use "rafamadriz/friendly-snippets" -- a bunch of ready-to-use snippets
 
     -- discord presence
     use 'andweeb/presence.nvim'
@@ -50,4 +53,7 @@ return require('packer').startup(function(use)
 
     use 'lewis6991/gitsigns.nvim'
     use 'theprimeagen/harpoon'
+    use 'feline-nvim/feline.nvim'
+
+    use "Hoffs/omnisharp-extended-lsp.nvim"
 end)
