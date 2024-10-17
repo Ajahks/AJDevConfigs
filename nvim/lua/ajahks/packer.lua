@@ -30,6 +30,7 @@ return require('packer').startup(function(use)
     use "neovim/nvim-lspconfig"
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
+    use "nvimtools/none-ls.nvim"
     use "folke/trouble.nvim"                -- for LSP\Linter warnings\errors
     use "hrsh7th/nvim-cmp"                    -- completion plugin
     use "hrsh7th/cmp-buffer"                  -- buffer completions

@@ -53,7 +53,8 @@ local linters_and_formatters = {
     'csharpier',
     'jsonlint',
     'markdownlint',
-    'eslint-lsp'
+    'eslint-lsp',
+    'remark-cli',
 }
 -------------------------------------------------------------------------------------------------------------
 ----------------------------------------- ADD YOUR DEBUGGER(S) HERE -----------------------------------------
@@ -135,8 +136,8 @@ servers['clangd'] = default_config
 servers['bashls'] = default_config
 servers['yamlls'] = default_config
 servers['lemminx'] = default_config
-servers['tsserver'] = default_config
 servers['eslint'] = default_config
+servers['ts_ls'] = default_config
 servers['gopls'] = default_config
 -------------------------------------------------------------------------------------------------------------
 -- Ensure installed servers
